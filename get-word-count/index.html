@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+
+  <script>
+
+    function getWordCount(sentence){
+      var wordCount = 1;
+      for (var i = 0; i<sentence.length; i++ ){
+        if(sentence[i] === " "){
+          wordCount ++
+        }
+      }
+      return wordCount;
+    }
+
+  function getWordCount2(sentence){
+   // console.log(sentence.split(" "));
+    return sentence.split(" ").length
+  }
+    console.log("getWordCount('This is a sample sentence') ", getWordCount("This is a sample sentence"))
+    //console.log("getWordCount2('This is a sample sentence') ", getWordCount2("This is a sample sentence"))
+    console.log('getWordCount("Han shot first")', getWordCount("Han shot first"))
+
+  </script>
+</body>
+</html>
