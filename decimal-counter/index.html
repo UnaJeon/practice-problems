@@ -28,13 +28,23 @@
       }
       return counter
     }
-
+      function decimalPlaceCounter3(stringNumber) {
+        var result = 0;
+        for (var i = 0; i < stringNumber.length; i++) {
+          if (stringNumber[i] === ".") {
+            for (var k = 0; k < stringNumber[k]; k++) {
+              result++;
+            }
+          }
+        }
+        return result;
+      }
     console.log('decimalPlaceCounter("127.245")', decimalPlaceCounter("127.245"))
     console.log('decimalPlaceCounter("145")', decimalPlaceCounter("145"))
     console.log('decimalPlaceCounter("23.00")', decimalPlaceCounter("23.00"))
 
-    console.log('decimalPlaceCounter2("127.245")', decimalPlaceCounter2("127.245"))
-    console.log('decimalPlaceCounter2("145")', decimalPlaceCounter2("145"))
+    console.log('decimalPlaceCounter2("127.245")', decimalPlaceCounter3("127.245"))
+    console.log('decimalPlaceCounter2("145")', decimalPlaceCounter3("145"))
     console.log('decimalPlaceCounter2("23.00")', decimalPlaceCounter2("23.00"))
 
   </script>
