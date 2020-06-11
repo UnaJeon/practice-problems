@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+
+
+
+
+
+  <script>
+
+//create a condition statement to check if the number falls in
+// between rangeObject.min and rangeObject.max
+// if the number does fall in between return true;
+//else return false
+
+function isWithinRange(number, rangeObject){
+if(number>=rangeObject.min && number<=rangeObject.max){
+  return true;
+}else{
+  return false
+}
+
+}
+
+
+console.log('isWithinRange(5, {min: 1, max: 9})', isWithinRange(5, { min: 1, max: 9 }))
+console.log('isWithinRange(12, {min:15, max: 29})', isWithinRange(12, { min: 15, max: 29 }))
+console.log('isWithinRange(9, {min:0, max: 9})', isWithinRange(9, { min: 0, max: 9 }))
+  </script>
+</body>
+</html>
