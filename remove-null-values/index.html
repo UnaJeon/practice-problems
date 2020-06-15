@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+//create a new array to store values
+//using loop go through an array
+//if the value is not equal to null push the value to newArray created
+//return the new array
+
+function removeNullValues(array){
+ var newArr =[]
+ for (var i=0; i<array.length; i++){
+   if(array[i]!==null){
+     newArr.push(array[i])
+   }
+ }
+ return newArr
+}
+
+console.log('removeNullValues([3, 5, null, null, 87, "hello", "goodbye"])',removeNullValues([3, 5, null, null, 87, "hello", "goodbye"]))
+console.log('removeNullValues([true, null, false, {}, null, 43, "node"])', removeNullValues([true, null, false, {}, null, 43, "node"]))
+console.log('removeNullValues([null, null, null, 7, null, "eight"])', removeNullValues([null, null, null, 7, null, "eight"]))
+  </script>
+</body>
+</html>
