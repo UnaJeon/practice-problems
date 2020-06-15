@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+//split the word
+//make a stroage for newArr and word
+//loop through each index and add and assign the value at each index to var word
+//then push that value to a newArr
+//return newArr
+
+    function wordBuilder(wordToSpell){
+     wordToSpell.split("")
+     var newWord=''
+     var newArr = []
+     for (var i=0; i <wordToSpell.length; i++){
+       newWord+=wordToSpell[i]
+       newArr.push(newWord)
+     }
+     return newArr
+    }
+
+    console.log('wordBuilder("JavaScript")', wordBuilder("JavaScript"))
+    console.log('wordBuilder("Moon")', wordBuilder("Moon"))
+    console.log('wordBuilder("Stars")', wordBuilder("Stars"))
+  </script>
+</body>
+</html>
