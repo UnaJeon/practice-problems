@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+
+
+    function isSantaComing(dateObject){
+      var date = dateObject.getDate();
+      var month = dateObject.getMonth();
+      if (date===24 && month===11){
+        return true;
+      }
+        return false;
+    }
+
+    console.log('isSantaComing(new Date(2018, 7, 4))', isSantaComing(new Date(2018, 7, 4)))
+    console.log('isSantaComing(new Date(1995, 11, 23, 23, 59, 59))', isSantaComing(new Date(1995, 11, 23, 23, 59, 59)))
+    console.log('isSantaComing(new Date(2001, 11, 24))', isSantaComing(new Date(2001, 11, 24)))
+  </script>
+</body>
+</html>
