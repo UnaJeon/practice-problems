@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+
+//create a storage
+//change string number to intger using for loop to iterate each index
+//store  new values to the storage created
+//set a conditional check to check index of the array is not NaN and length is 5
+//if it is return true
+//if not return false
+
+
+    function zipCodeValidator(zipCode){
+      newArr=[]
+      for(var i=0; i<zipCode.length; i++){
+        newArr.push(parseInt(zipCode[i]))
+        }
+      if (typeof newArr[i] !== NaN && zipCode.length ===5) {
+        return true
+      }else{
+        return false
+      }
+    }
+
+
+    console.log('zipCodeValidator("21594")', zipCodeValidator("21594"))
+    console.log('zipCodeValidator("3Eds32")', zipCodeValidator("3Eds32"))
+    console.log('zipCodeValidator("9123465")', zipCodeValidator("9123465"))
+
+  </script>
+</body>
+</html>
