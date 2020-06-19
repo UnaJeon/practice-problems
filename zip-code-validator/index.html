@@ -17,14 +17,14 @@
 
 
     function zipCodeValidator(zipCode){
-      newArr=[]
+      var newArr=[]
       for(var i=0; i<zipCode.length; i++){
         newArr.push(parseInt(zipCode[i]))
         }
-      if (typeof newArr[i] !== NaN && zipCode.length ===5) {
-        return true
-      }else{
+      if (isNaN(newArr[i]) && zipCode.length>5) {
         return false
+      }else{
+        return true
       }
     }
 
@@ -32,7 +32,7 @@
     console.log('zipCodeValidator("21594")', zipCodeValidator("21594"))
     console.log('zipCodeValidator("3Eds32")', zipCodeValidator("3Eds32"))
     console.log('zipCodeValidator("9123465")', zipCodeValidator("9123465"))
-
+    console.log(typeof NaN )
   </script>
 </body>
 </html>
