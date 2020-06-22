@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+
+
+
+  <script>
+
+
+    function payscaleAnalyzer(payList){
+      const max = Math.max.apply(Math,payList)
+      const min = Math.min.apply(Math,payList)
+      return max-min
+    }
+
+    function payscaleAnalyzer2(payList){
+      let max = payList[0]
+      let min = payList[0]
+      for (let i=0; i<payList.length; i++){
+        if (payList[i]>max){
+          max = payList[i]
+        }
+        if (payList[i]<min){
+          min = payList[i]
+        }
+      }
+      return max-min
+    }
+
+    console.log('payscaleAnalyzer([28, 34, 21, 39]) ', payscaleAnalyzer2([28, 34, 21, 39]))
+    console.log('payscaleAnalyzer([18, 22, 19, 26])', payscaleAnalyzer2([18, 22, 19, 26]))
+    console.log('payscaleAnalyzer([41.50, 27.25, 32.50, 29.60])', payscaleAnalyzer2([41.50, 27.25, 32.50, 29.60]))
+  </script>
+</body>
+</html>
