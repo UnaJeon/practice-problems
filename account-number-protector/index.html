@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+
+
+  <script>
+//make storage for the 4 digit
+//loop through the string
+//set a condition that if i is bigger than 11 add that string number to the new variable created
+// add the prfix and the number  together
+// return the value
+
+    function accountNumberProtector(cardNumberString){
+      var number =''
+      var prefix ="**"
+      for (var i=0; i<cardNumberString.length; i++){
+        if (i>11){
+          number+=cardNumberString[i]
+        }
+      }
+      return prefix + number
+    }
+
+
+  console.log('accountNumberProtector("5543223485638832")', accountNumberProtector("5543223485638832"))
+   console.log('accountNumberProtector("8934235477210943")', accountNumberProtector("8934235477210943"))
+  console.log('accountNumberProtector("7513635499320192")', accountNumberProtector("7513635499320192"))
+  </script>
+</body>
+</html>
